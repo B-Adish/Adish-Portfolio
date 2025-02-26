@@ -1,0 +1,412 @@
+.home1{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home{
+    width: 90%;
+    height: 120vh;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: bisque;
+    display: flex;
+    justify-content: start;
+    gap: 6%;
+}
+.prof{
+    width: 30%;
+    height: 95%;
+    border-radius: 20px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    /* opacity: 0.6; */
+}
+.prof p{
+    color: white;
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    font-family: "Josefin Sans", serif;
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 21px;
+    /* padding: 10px; */
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.prof::after, .prof::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), blue, red, green, yellow, purple);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 8px;
+    border-radius: 10px;
+    animation: 5s spin linear infinite;
+}
+.prof::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+.p{
+    width: 100%;
+    height: 5vh;
+    /* background-color: palegreen; */
+    color: white;
+    font-family: "Josefin Sans", serif;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+}
+.img{
+    width: 80%;
+    height: 40%;
+    border-radius: 20px;
+    background-color: seagreen;
+}
+.img-1{
+    width: 98%;
+    height: 98%;
+}
+.cv{
+    width: 60%;
+    height: 10%;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 100px;
+    box-shadow: 2px 2px 2px blue;
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: black;
+    color: white;
+}
+.dl{
+    width: 12%;
+    height: 45%;
+}
+.conn{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: black;
+}
+.con-ico{
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.ico-con:hover{
+    box-shadow: 2px 2px 2px var(--green);
+}
+.connect{
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 130px;
+    border-radius: 25px;
+    border: 2px solid blue;
+    box-shadow: 2px 2px 2px rgba(16, 18, 181, 0.701);
+    background-color: black;
+}
+.port{
+    width: 63%;
+    height: 120vh;
+    background-color: honeydew;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-overflow: hidden;
+    overflow-y: scroll;
+}
+.about{
+    width: 90%;
+    height: 40vh;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    border-radius: 20px;
+}
+.ab{
+    width: 35%;
+    height: 85%;
+    background-color: var(--black);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s ease-in-out;
+}
+.ab:hover{
+    border: 3px solid var(--blue);
+    box-shadow: 1px 1px 1px var(--blue);
+}
+.ab:hover .abou{
+    color: chartreuse;
+}
+.ab-ico{
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    border: 2px solid chartreuse;
+    font-size: 600%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+.ab-ico:hover{
+    border: 2px solid var(--blue);
+    box-shadow: 3px 2px 2px var(--blue);
+    transform: rotateZ(360deg);
+    color: beige;
+}
+.abou{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: var(--white);
+    font-family: "Josefin Sans", serif;
+    transition: .5s ease-in-out;
+}
+.work{
+    width: 35%;
+    height: 85%;
+    background-color: var(--black);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s ease-in-out;
+}
+.work:hover{
+    border: 3px solid var(--blue);
+    box-shadow: 1px 1px 1px var(--blue);
+}
+.work:hover .works{
+    color: chartreuse;
+}
+.work-ico{
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    border: 2px solid chartreuse;
+    font-size: 500%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+.work-ico:hover{
+    border: 2px solid var(--blue);
+    box-shadow: 3px 2px 2px var(--blue);
+    transform: rotateZ(360deg);
+    color: beige;
+}
+.works{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: var(--white);
+    font-family: "Josefin Sans", serif;
+    transition: .5s ease-in-out;
+}
+.skills{
+    width: 90%;
+    height: 30vh;
+    background-color: var(--black);
+    border-radius: 20px;
+}
+.skills-ico{
+    font-size: 200%;
+    color: white;
+    width: 100%;
+    height: 10vh;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.con{
+    width: 100%;
+    height: 10vh;
+    color: white;
+    font-family: "Josefin Sans", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.marquee{
+    width: 100%;
+    height: 10vh;
+    font-family: "Josefin Sans", serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    animation: scroll 10s infinite;
+}
+.education{
+    width: 90%;
+    height: 40vh;
+    background-color: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    border-radius: 20px;
+}
+.profi{
+    width: 35%;
+    height: 85%;
+    background-color: var(--black);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s ease-in-out;
+}
+.profi:hover{
+    border: 3px solid var(--blue);
+    box-shadow: 1px 1px 1px var(--blue);
+}
+.profi:hover .profil{
+    color: chartreuse;
+}
+.profi-ico{
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    border: 2px solid chartreuse;
+    font-size: 600%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+.profi-ico:hover{
+    border: 2px solid var(--blue);
+    box-shadow: 3px 2px 2px var(--blue);
+    transform: rotateZ(360deg);
+    color: beige;
+}
+.profil{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: var(--white);
+    font-family: "Josefin Sans", serif;
+    transition: .5s ease-in-out;
+}
+.edu{
+    width: 35%;
+    height: 85%;
+    background-color: var(--black);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s ease-in-out;
+}
+.edu:hover{
+    border: 3px solid var(--blue);
+    box-shadow: 1px 1px 1px var(--blue);
+}
+.edu:hover .educ{
+    color: chartreuse;
+}
+.edu-ico{
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    border: 2px solid chartreuse;
+    font-size: 500%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+.edu-ico:hover{
+    border: 2px solid var(--blue);
+    box-shadow: 3px 2px 2px var(--blue);
+    transform: rotateZ(360deg);
+    color: beige;
+}
+.educ{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: var(--white);
+    font-family: "Josefin Sans", serif;
+    transition: .5s ease-in-out;
+}
