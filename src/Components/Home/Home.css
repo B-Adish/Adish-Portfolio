@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     padding-top: 50px;
-    background-color: aqua;
+    background-color: rgb(11, 9, 9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,8 +11,9 @@
     width: 90%;
     height: 120vh;
     padding: 50px;
-    border-radius: 30px;
-    background-color: bisque;
+    border-radius: 50px;
+    /* border: 2px solid var(--white); */
+    background-color: black;
     display: flex;
     justify-content: start;
     gap: 6%;
@@ -20,7 +21,8 @@
 .prof{
     width: 30%;
     height: 95%;
-    border-radius: 20px;
+    border-radius: 30px;
+    border: 2px solid var(--white);
     background-color: var(--black);
     display: flex;
     flex-direction: column;
@@ -151,20 +153,21 @@
 .port{
     width: 63%;
     height: 120vh;
-    background-color: honeydew;
+    background-color: var(--black);
     border-radius: 40px;
+    border: 2px solid var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 15px;
     text-overflow: hidden;
-    overflow-y: scroll;
 }
 .about{
     width: 90%;
     height: 40vh;
-    background-color: yellow;
+    background-color: var(--black);
+    /* border: 2px solid yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,7 +178,8 @@
     width: 35%;
     height: 85%;
     background-color: var(--black);
-    border-radius: 15px;
+    border-radius: 20px;
+    border: 1px solid var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -223,7 +227,8 @@
     width: 35%;
     height: 85%;
     background-color: var(--black);
-    border-radius: 15px;
+    border-radius: 20px;
+    border: 1px solid var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,17 +277,55 @@
     height: 30vh;
     background-color: var(--black);
     border-radius: 20px;
+    border: 1px solid var(--white);
+    width: 100%;
+    overflow: hidden;
+    background: black;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
 }
 .skills-ico{
-    font-size: 200%;
-    color: white;
-    width: 100%;
-    height: 10vh;
-    margin-right: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 50px; 
+    padding-left: 100%;
+    font-size: 40px;
+    animation: scrollNews 80s linear infinite;
+    width: max-content;
 }
+.skills-ico span {
+    white-space: nowrap;
+    color: white;
+  }
+@keyframes scrollNews {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  .skills-ico-1{
+    display: flex;
+    gap: 50px; 
+    padding-left: 100%;
+    font-size: 20px;
+    animation: scrollNews 80s linear infinite;
+    width: max-content;
+}
+.skills-ico-1 span {
+    white-space: nowrap;
+    color: white;
+  }
+@keyframes scrollNews {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
 .con{
     width: 100%;
     height: 10vh;
@@ -292,22 +335,10 @@
     align-items: center;
     justify-content: center;
 }
-.marquee{
-    width: 100%;
-    height: 10vh;
-    font-family: "Josefin Sans", serif;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    color: white;
-    animation: scroll 10s infinite;
-}
 .education{
     width: 90%;
     height: 40vh;
-    background-color: hotpink;
+    background-color: var(--black);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,7 +349,8 @@
     width: 35%;
     height: 85%;
     background-color: var(--black);
-    border-radius: 15px;
+    border-radius: 20px;
+    border: 1px solid var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -366,7 +398,8 @@
     width: 35%;
     height: 85%;
     background-color: var(--black);
-    border-radius: 15px;
+    border-radius: 20px;
+    border: 1px solid var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -16,14 +16,17 @@ import { SiCoronarenderer } from "react-icons/si";
 import { BiLogoNetlify } from "react-icons/bi";
 import { TiSocialDribbble } from "react-icons/ti";
 import { FaGraduationCap } from "react-icons/fa6";
+// import Navbar from '../src/Components/Navbar/Navbar'
+
 
 const Home = () => {
   return (
     <>
+      {/* <Navbar/> */}
     <div className="home1">
       <div className="home">
         <div className="prof">
-          <p>Hi there! I'm <span>ADISH</span></p>
+          <p>Hey there! I'm <span>ADISH</span></p>
             <img className='img' src= {img} alt="" />
             <div className="p">FULL-STACK DEVELOPER</div>
 
@@ -52,156 +55,74 @@ const Home = () => {
               </div>
             </div>
             <div className="skills">
-              {/* <marquee className="skills-ico" behavior="scroll" scrollamout="5" direction="left" loop="-1">
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-               <IoLogoHtml5 />
-               <IoLogoCss3 />
-               <IoLogoJavascript />
-               <IoLogoReact />
-               <IoLogoNodejs />
-               <FaGithub />
-               <SiCoronarenderer />
-               <BiLogoNetlify />
-              </marquee> */}
+              <div className="skills-ico">
+               <span><IoLogoHtml5 /></span>
+               <span><IoLogoCss3 /></span>
+               <span><IoLogoJavascript /></span>
+               <span><IoLogoReact /></span>
+               <span><IoLogoNodejs /></span>
+               <span><FaGithub /></span>
+               <span><SiCoronarenderer /></span>
+               <span><BiLogoNetlify /></span>
+               <span><IoLogoHtml5 /></span>
+               <span><IoLogoCss3 /></span>
+               <span><IoLogoJavascript /></span>
+               <span><IoLogoReact /></span>
+               <span><IoLogoNodejs /></span>
+               <span><FaGithub /></span>
+               <span><SiCoronarenderer /></span>
+               <span><BiLogoNetlify /></span>
+               <span><IoLogoHtml5 /></span>
+               <span><IoLogoCss3 /></span>
+               <span><IoLogoJavascript /></span>
+               <span><IoLogoReact /></span>
+               <span><IoLogoNodejs /></span>
+               <span><FaGithub /></span>
+               <span><SiCoronarenderer /></span>
+               <span><BiLogoNetlify /></span>
+               <span><IoLogoHtml5 /></span>
+               <span><IoLogoCss3 /></span>
+               <span><IoLogoJavascript /></span>
+               <span><IoLogoReact /></span>
+               <span><IoLogoNodejs /></span>
+               <span><FaGithub /></span>
+               <span><SiCoronarenderer /></span>
+               <span><BiLogoNetlify /></span>
+              </div>
               <div className="con"><h2>SKILLS</h2></div>
-              <div>
-                {/* <marquee className="marquee" behavior="" direction="right" loop="-1" scrollamout="10">
-                  Netlify
-                  Render
-                  Git
-                  NodeJS
-                  ReactJS
-                  JavaScript 
-                  CSS 
-                  HTML
-                  Netlify
-                  Render
-                  Git
-                  NodeJS
-                  ReactJS
-                  JavaScript 
-                  CSS 
-                  HTML
-                  Netlify
-                  Render
-                  Git
-                  NodeJS
-                  ReactJS
-                  JavaScript 
-                  CSS 
-                  HTML
-                  Netlify
-                  Render
-                  Git
-                  NodeJS
-                  ReactJS
-                  JavaScript 
-                  CSS 
-                  HTML
-                  Netlify
-                  Render
-                  Git
-                  NodeJS
-                  ReactJS
-                  JavaScript 
-                  CSS 
-                  HTML
-                  Netlify
-                  Render
-                  Git
-                  NodeJS
-                  ReactJS
-                  JavaScript 
-                  CSS 
-                  HTML
-                </marquee> */}
+              <div className="skills-ico-1">
+                  <span>Netlify</span>
+                  <span>Render</span>
+                  <span>Git</span>
+                  <span>NodeJS</span>
+                  <span>ReactJS</span>
+                  <span>JavaScript</span> 
+                  <span>CSS</span>
+                  <span>HTML</span>
+                  <span>Netlify</span>
+                  <span>Render</span>
+                  <span>Git</span>
+                  <span>NodeJS</span>
+                  <span>ReactJS</span>
+                  <span>JavaScript</span> 
+                  <span>CSS</span>
+                  <span>HTML</span>
+                  <span>Netlify</span>
+                  <span>Render</span>
+                  <span>Git</span>
+                  <span>NodeJS</span>
+                  <span>ReactJS</span>
+                  <span>JavaScript</span> 
+                  <span>CSS</span>
+                  <span>HTML</span>
+                  <span>Netlify</span>
+                  <span>Render</span>
+                  <span>Git</span>
+                  <span>NodeJS</span>
+                  <span>ReactJS</span>
+                  <span>JavaScript</span> 
+                  <span>CSS</span>
+                  <span>HTML</span>
               </div>
             </div>
             <div className="education">
