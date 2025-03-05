@@ -29,7 +29,9 @@ const About = () => {
                 </div>
               </div>
           </div>
-          <div className="port-ab"></div>
+          <div className="port-ab">
+            <div className="ps">Professional Summary</div>
+          </div>
         </div>
       </div>
     </>

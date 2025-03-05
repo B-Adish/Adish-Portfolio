@@ -153,4 +153,16 @@
     height: 120vh;
     background-color: honeydew;
     border-radius: 40px;
+    display: flex;
+    justify-content: center;
+}
+.ps{
+    width: 95%;
+    height: 60%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    font-family: "Acme", sans-serif;
+    font-size: 35px;
+    font-weight: 100;
 }

@@ -16,7 +16,6 @@ import { SiCoronarenderer } from "react-icons/si";
 import { BiLogoNetlify } from "react-icons/bi";
 import { TiSocialDribbble } from "react-icons/ti";
 import { FaGraduationCap } from "react-icons/fa6";
-// import Navbar from '../src/Components/Navbar/Navbar'
 
 
 const Home = () => {
